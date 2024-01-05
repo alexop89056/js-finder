@@ -110,7 +110,7 @@ class SourceParser:
             self._delay = config.DELAY_DEFAULT
 
     @staticmethod
-    def c_print(color: str, string: str, to_file=None):
+    def c_print(color: str, string: str, to_file=False):
         if color == 'green':
             print(f'\033[92m{string}\033[0m')
         elif color == 'red':
